@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import zywLogo from "./zywlogo.png";
+import zywLogo from "./zywlogo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
