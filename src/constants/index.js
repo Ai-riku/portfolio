@@ -23,6 +23,14 @@ import {
     jobit,
     tripguide,
     threejs,
+    cpp,
+    linux,
+    mysql,
+    python,
+    morganstanley,
+    sfu,
+    aicommentary,
+    herobg,
   } from "../assets";
   
   export const navLinks = [
@@ -42,24 +50,40 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "ML Engineer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Backend Engineer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Systems Engineer",
       icon: creator,
     },
   ];
   
   const technologies = [
+    {
+      name: "C++",
+      icon: cpp,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "mySQL",
+      icon: mysql,
+    },
+    {
+      name: "Linux",
+      icon: linux,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -81,20 +105,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "Three JS",
@@ -104,69 +116,34 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Software Engineer",
+      company_name: "Morgan Stanley",
+      icon: morganstanley,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "November 2021 - May 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Collaborated with a global team to develop, maintain, and deploy the company’s foreign exchange order manager (FXOM) using CI/CD pipelines.",
+        "Utilized C++ to develop and deploy trading features for the FXOM system, emphasizing Object-Oriented Programming (OOP) concepts and SOLID design principles.",
+        "Facilitated the migration of specific client account information from application configuration to database tables, using Sybase, Runway, and SQL.",
+        "Created Python automation scripts that prevented over $400,000 in losses by employing data analytics to identify trading algorithm breaks and notifying response teams of detected incidents.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Research Assistant",
+      company_name: "Simon Fraser University",
+      icon: sfu,
+      iconBg: "#FFFFFF",
+      date: "September 2020 - May 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Researched and developed advanced algorithms for color demosaicing through scientific analysis, significantly reducing color error compared to traditional methods like bilinear, median, and Kimmel demosaicing techniques.",
+        "Explored and devised techniques to enhance the detection of weak hot pixels in camera sensors, aiming to improve hot pixel defect detection compared to existing implementations.",
+        "Documented and detailed research findings in research papers for the respective research projects."
       ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    }
   ];
   
   const testimonials = [
@@ -198,66 +175,54 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "AI Video Commentary",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "AI based commentary application that generates audio speech output from user supplied streams of video/images.",
       tags: [
         {
-          name: "react",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "OpenAI-API",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "StreamLit",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: aicommentary,
+      source_code_link: "https://github.com/Ai-riku/GPT-Live-Commentator",
+    },
+    {
+      name: "Pest Deterence Engineering Project",
+      description:
+        "Autonomous water turret that automatically detects and target pests in lawns and gardens using a combination of motion sensors and computer vision ",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TensorFlow",
+          color: "green-text-gradient",
+        },
+      ],
+      image: herobg,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Robotic Arm Programming",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A program in C++ that performs forward and inverse kinematics for a given robotic arm and instructs the arm to move to a desired configuration",
       tags: [
         {
-          name: "react",
+          name: "C++",
           color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
+        }
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
+      image: herobg,
       source_code_link: "https://github.com/",
     },
   ];
