@@ -40,7 +40,7 @@ const Contact = () => {
       },
       'nIQLIkHx2e9pgPWYy'
     ).then(() => {
-      alert('Thank you. I will get back to you as soon as possible.');
+      alert('Thank you! I will get back to you as soon as possible.');
       setForm({
         name: '',
         email: '',
