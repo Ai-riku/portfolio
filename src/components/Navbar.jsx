@@ -29,12 +29,23 @@ const Navbar = () => {
                 active === link.title
                   ? "text-white"
                   : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-medium cursor-pointer pt-2`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <li 
+            key="contact"
+            className={`${
+              active === "Contact"
+                ? "bg-gradient-to-bl from-pink-500 to-orange-400"
+                : "bg-gradient-to-r from-fuchsia-500 to-[#915eff]"
+            } bg-gradient-to-r from-fuchsia-500 to-[#915eff] hover:bg-gradient-to-bl hover:from-pink-500 hover:to-orange-400 text-[18px] font-medium cursor-pointer p-2 rounded-2xl`}
+            onClick={() => setActive("Contact")}
+          >
+            <a href={"#contact"}>{"Contact"}</a>
+          </li>
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -65,6 +76,20 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              <li 
+                key={"contact"}
+                className={`${
+                  active === "Contact"
+                    ? "text-white"
+                    : "text-secondary"
+                } hover:text-white foint-poppins font-medium cursor-pointer text-[16px]`}
+                onClick={() => {
+                  setToggle(!toggle);
+                  setActive("Contact");
+                }}
+              >
+                <a href="#contact">{"Contact"}</a>
+              </li>
             </ul>
           </div>
         </div>

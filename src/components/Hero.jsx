@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas';
 
@@ -18,6 +17,13 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develope systems for <br className='sm:block hidden'/> AI and machine learning applications
           </p>
+          <a
+            key="contact"
+            className={`${styles.heroSubText} mt-8 inline-block relative bg-gradient-to-r from-fuchsia-500 to-[#915eff] hover:bg-gradient-to-bl hover:from-pink-500 hover:to-orange-400 py-2 px-8 rounded-2xl z-10`}
+            href='#contact'
+          >
+            Get in touch!
+          </a>
         </div>
       </div>
       <ComputersCanvas />
